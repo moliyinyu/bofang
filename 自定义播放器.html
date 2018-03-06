@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#box{
+				width: 300px;
+				height: 500px;
+				background: #14B8EE;
+				position: absolute;
+				top: 0px;
+			}
+			#btn1{
+				width: 46px;
+				height: 46px;
+				background: url(img/1.png) no-repeat;
+				background-position: -0px -47px;
+				position: absolute;
+				top: 110px;
+				left: 30px;
+			}
+			#btn2{
+				width: 46px;
+				height: 46px;
+				background: url(img/1.png) no-repeat;
+				background-position: -98px -0px;
+			    position: absolute;
+				top: 110px;
+				left: 128px;
+				z-index: 999;
+			}
+			#btn3{
+				width: 46px;
+				height: 46px;
+				background: url(img/1.png) no-repeat;
+				background-position: -49px -48px;
+				position: absolute;
+				top: 110px;
+				right: 30px;
+			}
+			#oimg{
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
+				position: absolute;
+				top: 20px;
+				left: 110px;
+				z-index: 99;
+			}
+			#oimg2{
+				position: absolute;
+				top: 2px;
+				left: 26px;
+				z-index: 99;
+			}
+			#range1{
+				position: absolute;
+				top: 3px;
+				left: 48px;
+				border: none;
+				outline: medium;
+				display: none;
+				z-index: 99;
+			}
+			header{
+				width: 300px;
+				height: 200px;
+				position: relative;
+				background: #0090E5;
+				overflow: hidden;
+			}
+			h1{
+				margin-left: 20px;
+				margin-top: 10px;
+				color: blue;
+			}
+			#list li{
+				list-style: none;
+				height: 20px;
+				line-height: 30px;
+				margin-top: 10px;
+				margin-left: 20px;
+				font-size: 14px;
+				color: white;
+			}
+			#list li:hover{
+				cursor: pointer;
+			}
+			#gun{
+				color: brown;
+				position: absolute;
+				left: 80px;
+				height: 18px;
+				line-height: 18px;
+				display: block;
+				white-space: nowrap;
+				z-index: 10;	
+			}
+			#obox{
+				width: 300px;
+				height: 20px;
+				position: absolute;
+				bottom: 0px;
+				left:10px;
+				line-height: 20px;
+			}
+			#box2{
+				width: 210px;
+				height: 4px;
+				background: #80AFD2;
+				position: absolute;
+				top: 8px;
+				left: 0px;
+				
+			}
+			#time1{
+				position: absolute;
+				right: 15px;
+				font-size: 12px;
+			}
+			#box3{
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background: #FFFEA1;
+				position: absolute;
+				left: 0px;
+				top: 5px;
+				z-index: 99;
+			}
+			#box4{
+				width: 0px;
+				height: 4px;
+				background: gold;
+				position: absolute;
+				left: 0px;
+				top: 8px;
+				z-index: 9;
+			}
+			footer{
+				position: relative;
+			}
+			i{
+				font-size: 20px !important;
+				color: black;
+			}
+			#img1{
+				position: absolute;
+				top: 8px;
+				right: 70px;
+				color: red;
+			}
+			#img2{
+				position: absolute;
+				top: 6px;
+				right: 40px;
+			}
+			#img3{
+				position: absolute;
+				top: 8px;
+				right: 10px;
+			}
+			#aa{
+				width: 300px;
+				height: 500px;
+				border: solid 1px black;
+				margin: 30px auto;
+				background: aqua;
+				position: relative;
+			}
+			#geci{
+				width: 300px;
+				height: 500px;
+				background: palegreen;
+				overflow: hidden;
+				display: none;
+				position: absolute;
+				left: 0px;
+				top:0px;
+			}
+			#img4{
+				position: absolute;
+				left: 20px;
+				top: 10px;
+				color: blue;
+				font-weight: 900;
+			}
+			#geci h3{
+				width: 60px;
+				margin: 7px auto;
+				text-align: center;
+				color: blue;
+			}
+			#b{
+				width: 300px;
+				height: 50px;
+				z-index: 999;
+				background: palegreen;
+				position: absolute;
+				top: 0;
+			}
+			#geci #song{
+				width: 300px;
+				overflow: hidden;
+				height: 100%;
+				color: white;
+				text-align: center;
+				font: 16px;
+				min-height: 600px;
+				position: absolute;
+				top: 0px;
+				background: olive;
+				z-index: 99;
+			}
+			.p1{
+				text-align: center;
+				color: white;
+				height: 20px;
+				line-height: 20px;
+				margin-top: 10px;
+			}
+			.p11{
+				text-align: center;
+				font-size: 20px;
+				color: red;
+			}
+		</style>
+		<link href="font/iconfont.css" rel="stylesheet" type="text/css" />
+		<script src="js/tan.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<div id="aa">
+			
+		
+		<article id="box">
+			<header>
+				<div id="btn1"></div>
+				<div id="btn2"></div>
+				<div id="btn3"></div>
+				<img id="oimg" src="img/j.jpg" />
+				<img id="oimg2" src="img/2.png" />
+				<input id="range1" type="range" value="100" />
+				<span id="gun">Dream It Possible</span>
+				<div id="obox">
+					<div id="box2"></div>
+					<div id="box3"></div>
+					<div id="box4"></div>
+					<time id="time1"><span id="time2">00:00</span>/<span id="time3">04:30</span></time>
+				</div>
+			</header>
+			<footer>
+				<h1>歌曲列表</h1>
+				<ul id="list">
+					<li>蔡淳佳 - 蔷薇
+					    <audio src="video/蔡淳佳 - 蔷薇.mp3"></audio>
+					</li>
+					<li>姚贝-娜 - 红颜劫
+					    <audio src="video/姚贝娜 - 红颜劫.mp3"></audio>
+					</li>
+					<li>Dream It Possible
+					    <audio src="video/Delacey - Dream It Possible.mp3"></audio>
+					</li>
+					<li>铃声 - 速度与激情 (铃声)
+					    <audio src="video/铃声 - 速度与激情 (铃声).mp3"></audio>
+					</li>
+					<li>陈赫、郑恺 - 奔跑
+					    <audio src="video/陈赫、郑恺 - 奔跑 (Live).mp3"></audio>
+					</li>
+					<li>冯提莫 - 明天你好
+					    <audio src="video/冯提莫 - 明天你好.mp3"></audio>
+					</li>
+				</ul>
+				<i id="img1" class="icon iconfont icon-danquxunhuan"></i>
+				<i id="img2" class="icon iconfont icon-shunxuxunhuan"></i>
+				<i id="img3" class="icon iconfont icon-Psuijixunhuan-"></i>
+			</footer>
+		</article>
+		<article id="geci">
+			<div id="b">
+				<i id="img4" class="icon iconfont icon-zhuye"></i>
+			    <h3>歌词</h3>
+			</div>
+			<div id="song">
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+			</div>
+		</article>
+		</div>
+	</body>
+</html>
